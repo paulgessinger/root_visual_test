@@ -15,7 +15,7 @@
    h3->Scale(1.9 / 2.);
    
    h2->GetXaxis()->SetRangeUser(1, 10);
-   auto rp5 = new TRatioPlot((TH1*)h2->Clone(), (TH1*)h3->Clone(), "diff grid", "hist", "E", "AP");
+   auto rp5 = new TRatioPlot((TH1*)h2->Clone(), (TH1*)h3->Clone(), "diff grid");
    rp5->Draw();
    rp5->GetLowerRefGraph()->SetMinimum(-80);
    rp5->GetLowerRefGraph()->SetMaximum(80);

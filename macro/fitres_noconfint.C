@@ -11,7 +11,8 @@
 
    c1->Clear();
  
-   auto rp1 = new TRatioPlot(h1, "errfunc", "", "L");
+   auto rp1 = new TRatioPlot(h1, "errfunc");
+   rp1->SetGraphDrawOpt("L");
    rp1->Draw("noconfint");
    c1->Update();
    c1->SaveAs("run/fitres_noconfint.png"); 

@@ -11,7 +11,9 @@
    
    c1->Clear();
  
-   auto rp1 = new TRatioPlot(h1, "errasym", "E", "L");
+   auto rp1 = new TRatioPlot(h1, "errasym");
+   rp1->SetH1DrawOpt("E");
+   rp1->SetGraphDrawOpt("L");
    rp1->Draw("noconfint");
    c1->Update();
    c1->SaveAs("run/fitres_asym.png"); 

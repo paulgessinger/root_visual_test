@@ -12,7 +12,7 @@
    h3->Sumw2();
    h3->Scale(1.9 / 2.);
    
-   auto rp5 = new TRatioPlot((TH1*)h2->Clone(), (TH1*)h3->Clone(), "divsym nogrid", "hist", "E", "AP");
+   auto rp5 = new TRatioPlot((TH1*)h2->Clone(), (TH1*)h3->Clone(), "divsym nogrid");
    rp5->Draw();
 
 

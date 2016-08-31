@@ -28,8 +28,8 @@
    /*stack->Draw();*/
    /*h3->Draw("same+E");*/
 
-   auto rp = new TRatioPlot(stack, h3, "divsym", "hist", "E", "AP"); 
-   rp->SetTicks(1, 1);
+   auto rp = new TRatioPlot(stack, h3, "divsym"); 
+   c1->SetTicks(1, 1);
    rp->Draw();
 
    /*rp->GetUpperPad()->cd();*/

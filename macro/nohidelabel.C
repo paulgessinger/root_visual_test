@@ -11,8 +11,8 @@
 
    c1->Clear();
  
-   auto rp1 = new TRatioPlot(h1, "errfunc", "", "L");
-   rp1->BuildLowerPlot();
+   auto rp1 = new TRatioPlot(h1, "errfunc");
+   rp1->SetGraphDrawOpt("L");
    rp1->SetSeparationMargin(0.0);
    rp1->Draw("nohide");
    c1->Update();

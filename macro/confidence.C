@@ -11,7 +11,8 @@
    
    c1->Clear();
 
-   auto rp1 = new TRatioPlot(h1, "errasym", "L", "", fitres.Get());
+   auto rp1 = new TRatioPlot(h1, "errasym", fitres.Get());
+   rp1->SetGraphDrawOpt("L");
    rp1->Draw();
    rp1->GetLowerRefGraph()->SetMinimum(-2);
    rp1->GetLowerRefGraph()->SetMaximum(2);
