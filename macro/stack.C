@@ -25,7 +25,7 @@
    stack->Add(h1);
    stack->Add(h2);
 
-   /*stack->Draw();*/
+   /*stack->Draw("A");*/
    /*h3->Draw("same+E");*/
 
    auto rp = new TRatioPlot(stack, h3, "divsym"); 
