@@ -6,10 +6,11 @@
    h1->FillRandom("gaus", 2000);
    h1->Fit("gaus");
    h1->Sumw2(); 
- 
+
+   TVirtualPad *p;
    c1->Clear();
    c1->Divide(3, 1);
-   c1->cd(1);
+   p = c1->cd(1);
  
    h1->GetXaxis()->SetTitle("x");
    h1->GetYaxis()->SetTitle("y");
