@@ -1,5 +1,4 @@
 {
-   gROOT->SetBatch();
    gStyle->SetOptStat(0);
    
    auto c1 = new TCanvas("c1", "fit residual simple");
