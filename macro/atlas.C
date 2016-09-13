@@ -27,7 +27,7 @@
    auto fitres = rp1->GetCalculationOutputGraph();
    more->SetLineColor(kRed);
    more->SetFillColor(kRed);
-   more->SetFillStyle(3010);
+   more->SetFillStyle(3004);
    more->SetMinimum(-2);
    more->SetMaximum(2);
    more->Draw("IA3");
